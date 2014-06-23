@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="350" height="19" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="DebugDraw" value="True"/>
+  <property name="GravedadX" value="0"/>
+  <property name="GravedadY" value="-9.8"/>
+  <property name="ParallaxBG0RatioX" value="2.1"/>
+  <property name="ParallaxBG0RatioY" value="0.0"/>
+  <property name="ParallaxBG1RatioX" value="1.5"/>
+  <property name="ParallaxBG1RatioY" value="-0.05"/>
+  <property name="ParallaxBG2RatioX" value="1.0"/>
+  <property name="ParallaxBG2RatioY" value="-0.15"/>
+  <property name="ParallaxTilemapRatioX" value="2.1"/>
+  <property name="ParallaxTilemapRatioY" value="0"/>
+ </properties>
+ <tileset firstgid="1" name="RocasTileset" tilewidth="32" tileheight="32">
+  <image source="rocas.png" width="1024" height="1024"/>
+ </tileset>
+ <layer name="Background_3" width="350" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3ZwY2DQAwFUIpMOKeJ7WdLSWk715UCzBAjbHhPQrlEQXjMN0OmCQAAAAAAAAAA8pin6fVsnxHHXOC8AGdrufX6aZ8RR/ut3+znjRY5P8yZMVu1Vyeyar35fgYd80D+nXXeaJHzI8uc2ZNnZ2TgVu3PnMfAcSLnR5Y5syfPIjNwLcPn/99LO49Z17vGGY3scbNfSzY9tb1qTffkWWQGrmW4Z9hrqLzGW88Yla4lm57aVqtplfehle9J+qzN6aP3Kd8+a4/sce25xvTUtlpNt2ZJlkyTuzVV2SPqr/NU6ZFIGd+HflqHh/uipKx7RP2VR9YeuZuedbAmNUTvEaP+e9NfeVzxPUJFcpcl374PGO0t/cVdyF2WyF04htxlidyFY9w1d/8AsDGwLOhnAAA=
+  </data>
+ </layer>
+ <layer name="Background_4" width="350" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SuU0EQRRF0Z6xAIclCsBhiQJwWKIAHJZEBkiEJQogEiAKntl2q41S/XOka5ZUT/rDAAAAAAAAAAAAAAAAAAAAAAAAVLGZttJ22pnw/nMxDF/pezHvv1rR+76xClsrbKR9B+kwHaXjCe9/cr+/6a/TO+5931iFrRU20r7zdJEu09WE92vLYVhPG8t5/9WK3veNVdhaYSPtu0v36SE9Tni/m/vdS/ud3nHv+8YqbK2wkfat0lN6Ti8T3p/kfk/TWad33Pu+sQpbK2ykfa/pLb2njwnvr3O/N+m20zvufd9Yha0VNs7hH81I9U3oZwAA
+  </data>
+ </layer>
+ <layer name="Background_2" width="350" height="19">
+  <properties>
+   <property name="Name" value="Background"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PQ3KFARQF4ffHtrW42LYGsW0tLratSs/eAjJIBt1VX9Wd3TqhkJmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmdnv2scBDnGEY5zgFGc4xwUucYVr3OAWd7jHAx7xhGe84BVveMcHPvGFb5QG4f8V3JWoQjVqUIs61KMBjWhCM1rQija0owOd6EI3etCLPvRjAIPB3+0sQ3ngTne6053hnRHckYhCNGIQizjEIwGJSEIyUpCKNKQjA5nIQjZykIs85KMAhShCMUowhGGMYBRjGMcEJjGFacxgFnOYxwIWsYRlrGAVa1jHBjaxhW3sYBd7gTvd6U53/p+dP2e2LvroZwAA
+  </data>
+ </layer>
+ <layer name="Background_1" width="350" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SbWoCMRAGYI9X0XoOpdZztPhx5s6fhWUJ7IZMpIHngZeQECYDk90OAAAAAAAAAAAAAAAAAAAAAAAAAAAA+G8+IvvCOrpD5Bj5jJwK+xEse55mU3veal5/69vZWur36i1rPmt/tWfPWXepc45cCuvoviLXyHfkVtiPYNnzNJva81bz+lvfztZSv1dvWfNZ+6s9e866S52fyG9hHd098og8I6/CfgTLnqfZ1J63mtff+na2lvq9esuaz9pf7dlz1t13+wNj14DT6GcAAA==
+  </data>
+ </layer>
+ <objectgroup name="Coleccionables" width="350" height="19">
+  <properties>
+   <property name="Name" value="Coleccionables"/>
+  </properties>
+  <object name="Viradium" type="Viradium" x="1824" y="320" width="64" height="64">
+   <properties>
+    <property name="Cantidad" value="100"/>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="2144" y="224" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="9792" y="192" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="4768" y="512" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="4032" y="512" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="4160" y="512" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="5536" y="160" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="3360" y="192" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="3680" y="288" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="5408" y="512" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="5504" y="512" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="9824" y="512" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="10112" y="512" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="6592" y="512" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="6592" y="416" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="6720" y="416" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="6848" y="416" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="7008" y="96" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="7136" y="96" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="7264" y="96" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+  <object name="Viradium" type="Viradium" x="7392" y="96" width="64" height="64">
+   <properties>
+    <property name="Collectable" value="True"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Trayectorias" width="350" height="19">
+  <properties>
+   <property name="Name" value="Trayectorias"/>
+  </properties>
+  <object name="Trayectoria" type="Trayectoria" x="9760" y="576">
+   <properties>
+    <property name="Cuerpo" value="Static"/>
+    <property name="EscalaPersonaje" value="0.8"/>
+    <property name="LongitudSensorVision" value="200"/>
+    <property name="Personaje" value="Lander"/>
+    <property name="RotacionFija" value="True"/>
+   </properties>
+   <polyline points="0,0 192,0"/>
+  </object>
+  <object name="Trayectoria" type="Trayectoria" x="4320" y="576">
+   <properties>
+    <property name="Cuerpo" value="Static"/>
+    <property name="EscalaPersonaje" value="0.8"/>
+    <property name="LongitudSensorVision" value="500"/>
+    <property name="Personaje" value="Lander"/>
+    <property name="RotacionFija" value="True"/>
+   </properties>
+   <polyline points="0,0 416,0"/>
+  </object>
+  <object name="Trayectoria" type="Trayectoria" x="5088" y="224">
+   <properties>
+    <property name="Cuerpo" value="Static"/>
+    <property name="EscalaPersonaje" value="0.8"/>
+    <property name="LongitudSensorVision" value="600"/>
+    <property name="Personaje" value="Lander"/>
+    <property name="RotacionFija" value="True"/>
+   </properties>
+   <polyline points="0,0 416,0"/>
+  </object>
+  <object name="Trayectoria" type="Trayectoria" x="5504" y="576">
+   <properties>
+    <property name="Cuerpo" value="Static"/>
+    <property name="EscalaPersonaje" value="0.8"/>
+    <property name="LongitudSensorVision" value="500"/>
+    <property name="Personaje" value="Lander"/>
+    <property name="RotacionFija" value="True"/>
+   </properties>
+   <polyline points="0,0 416,0"/>
+  </object>
+  <object name="Trayectoria" type="Trayectoria" x="6688" y="576">
+   <properties>
+    <property name="Cuerpo" value="Static"/>
+    <property name="EscalaPersonaje" value="0.8"/>
+    <property name="LongitudSensorVision" value="300"/>
+    <property name="Personaje" value="Lander"/>
+    <property name="RotacionFija" value="True"/>
+   </properties>
+   <polyline points="0,0 416,0"/>
+  </object>
+  <object name="Trayectoria" type="Trayectoria" x="7168" y="256">
+   <properties>
+    <property name="Cuerpo" value="Static"/>
+    <property name="EscalaPersonaje" value="0.8"/>
+    <property name="LongitudSensorVision" value="500"/>
+    <property name="Personaje" value="Lander"/>
+    <property name="RotacionFija" value="True"/>
+   </properties>
+   <polyline points="0,0 416,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="Finish" width="350" height="19">
+  <properties>
+   <property name="Name" value="Finish"/>
+  </properties>
+  <object name="Finish" type="Finish" x="10752" y="0" width="64" height="608"/>
+ </objectgroup>
+ <objectgroup name="Cossino" width="350" height="19">
+  <object name="Cossino" type="Cossino" x="544" y="384" width="128" height="192">
+   <properties>
+    <property name="AltoForzado" value="250"/>
+    <property name="AnchoForzado" value="85"/>
+    <property name="CaminarDeltaX" value="1.5"/>
+    <property name="CaminarDeltaY" value="0"/>
+    <property name="CorrerDeltaX" value="3.5"/>
+    <property name="CorrerDeltaY" value="0"/>
+    <property name="Cuerpo" value="Dynamic"/>
+    <property name="Densidad" value="4"/>
+    <property name="Escala" value="0.85"/>
+    <property name="Friccion" value="0.5"/>
+    <property name="MultDeltaCaminar" value="50"/>
+    <property name="MultDeltaCorrer" value="50"/>
+    <property name="MultDeltaSaltar" value="200"/>
+    <property name="Restitucion" value="0"/>
+    <property name="RotacionFija" value="True"/>
+    <property name="SaltarDeltaX" value="1"/>
+    <property name="SaltarDeltaY" value="2"/>
+    <property name="SaltarImpulsoExtraX" value="0.4"/>
+    <property name="SaltarImpulsoExtraY" value="0"/>
+    <property name="Sensor" value="False"/>
+    <property name="SensorTierra" value="True"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Colisiones" width="350" height="19">
+  <properties>
+   <property name="Name" value="Colisiones"/>
+  </properties>
+  <object name="Rock" type="Rock" x="0" y="576" width="1728" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="1728" y="448" width="256" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="2080" y="352" width="96" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="2368" y="512" width="192" height="64">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="2176" y="352" width="96" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="9728" y="256" width="224" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="9024" y="576" width="576" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="9248" y="448" width="352" height="128">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="9408" y="320" width="192" height="128">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="6336" y="576" width="640" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="9728" y="576" width="224" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="10080" y="576" width="1120" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="2912" y="480" width="352" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="3072" y="416" width="192" height="64">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="1728" y="576" width="1152" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="3584" y="352" width="320" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="3264" y="576" width="1600" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="4128" y="224" width="576" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="6112" y="448" width="128" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="5088" y="224" width="576" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="5408" y="576" width="512" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="6496" y="352" width="128" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="6368" y="352" width="128" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="6688" y="256" width="896" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="6240" y="448" width="128" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="8064" y="384" width="224" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="7584" y="576" width="576" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="7104" y="576" width="352" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="8384" y="288" width="224" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="8800" y="288" width="224" height="32">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+  <object name="Rock" type="Rock" x="2880" y="512" width="384" height="96">
+   <properties>
+    <property name="Collidable" value="True"/>
+    <property name="Cuerpo" value="Static"/>
+    <property name="Densidad" value="10"/>
+    <property name="Friccion" value="1"/>
+    <property name="Restitucion" value="0"/>
+    <property name="Sensor" value="False"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
